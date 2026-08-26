@@ -1,0 +1,17 @@
+flask
+flask-sqlalchemy
+flask-login
+apscheduler
+requests
+werkzeug
+gunicorn
+pyotp
+qrcode[pil]
+psutil
+requests-unixsocket
+psycopg2-binary
+pymongo   
+libsql-client
+redis                
+pymysql 
+psycopg[binary]

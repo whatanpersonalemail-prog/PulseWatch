@@ -1,0 +1,16 @@
+version: "3.8"
+
+# PulseWatch v4 — Neon PostgreSQL deployment
+
+services:
+  pulsewatch:
+    build: .
+    container_name: pulsewatch
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgres://avnadmin:AVNS_7prZ4s_qEErQvY_BQQC@pulsewatch-eu-pulsewatch-eu.j.aivencloud.com:19530/defaultdb?sslmode=require
+      - SECRET_KEY=change-me-to-something-random-and-long-please
+      - PORT=5000
+      
